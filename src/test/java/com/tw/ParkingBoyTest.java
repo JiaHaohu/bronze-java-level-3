@@ -81,8 +81,8 @@ public class ParkingBoyTest {
         parkingBoy.fetch(null);
 
         assertEquals(
-            "Please provide your parking ticket.",
-            parkingBoy.getLastErrorMessage());
+                "Please provide your parking ticket.",
+                parkingBoy.getLastErrorMessage());
     }
 
     @Test
@@ -108,8 +108,8 @@ public class ParkingBoyTest {
         parkingBoy.fetch(ticket);
 
         assertEquals(
-            "Unrecognized parking ticket.",
-            parkingBoy.getLastErrorMessage()
+                "Unrecognized parking ticket.",
+                parkingBoy.getLastErrorMessage()
         );
     }
 

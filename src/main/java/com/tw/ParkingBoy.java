@@ -11,14 +11,18 @@ public class ParkingBoy {
     public ParkingTicket park(Car car) {
         // TODO: Implement the method according to test
         // <-start-
-        return null;
+        ParkingResult parkResult = parkingLot.park(car);
+        lastErrorMessage = parkResult.getMessage();
+        return parkResult.getTicket();
         // ---end->
     }
 
     public Car fetch(ParkingTicket ticket) {
         // TODO: Implement the method according to test
         // <-start-
-        return null;
+        FetchingResult fetchingResult = parkingLot.fetch(ticket);
+        lastErrorMessage = fetchingResult.getMessage();
+        return fetchingResult.getCar();
         // ---end->
     }
 
